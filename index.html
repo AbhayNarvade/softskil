@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -55,6 +54,162 @@
   <!-- For scroll trigger  -->
 
   <script src="css-scroll-on-reveal/js/ScrollOnReveal.js"></script>
+  <style>
+    /* Mission & Vision Section */
+    #mission-vision {
+      padding: 60px 0;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    /* Section Title & Subtitle */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #FF6B00;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    /* Mission & Vision Box */
+    .info-box {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      max-width: 90%;
+    }
+
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Icon Styling */
+    .info-box .icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+      color: #FF6B00;
+    }
+
+    .vision-box .icon {
+      color: #FFD700;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .info-box {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* what we offer */
+
+
+    /* Section Layout */
+    .training-section {
+      padding: 80px 0;
+    }
+
+    .training-section:nth-child(even) {
+      background: #ffffff;
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #FF6B00;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    /* Cards */
+    .training-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    .training-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Icons */
+    .training-card .icon {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #FF6B00;
+    }
+
+    /* Training List */
+    .training-list {
+      text-align: left;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .training-list li {
+      font-size: 18px;
+      color: #333;
+      padding: 8px 0;
+      position: relative;
+    }
+
+    .training-list li::before {
+      content: "✔";
+      color: #FF6B00;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .training-card {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -78,7 +233,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link mx-1 p-2 active" href="index.html">About</a>
+            <a class="nav-link mx-1 p-2 active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-1 p-2 " href="files/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-1 p-2" href="files/services.html">Services</a>
@@ -127,6 +285,40 @@
       </div>
     </div>
   </div>
+
+
+  <section id="mission-vision" class="container my-5">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Our Mission & Vision</h2>
+      <p class="section-subtitle">Empowering Growth & Creating Opportunities</p>
+    </div>
+
+    <div class="row align-items-center">
+      <!-- Mission -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="info-box mission-box">
+          <div class="icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="text-primary">Our Mission</h3>
+          <p>Our mission is by 2030 to empower maximum individuals and organizations by providing high quality training
+            in essential soft skills, which will help them to build strong interpersonal relationships, enhance
+            communication in personal and professional growth.</p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="info-box vision-box">
+          <div class="icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3 class="text-warning">Our Vision</h3>
+          <p>To serve as a main connection between education and employment, fostering a culture where individuals are equipped with the necessary soft skills to thrive in a dynamic workplace, ultimately creating a more collaborative and productive workforce across industries. </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="container my-5 fading" id="whyshould">
     <div class="row justify-content-center mb-4">
@@ -191,6 +383,100 @@
       </div>
     </div>
   </div>
+
+  <!-- Corporate Training Section -->
+  <section id="corporate-training" class="training-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">What We Offer in Training?</h2>
+        <p class="section-subtitle">For Corporate Professionals</p>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Corporate Training -->
+        <div class="col-md-6">
+          <div class="training-card">
+            <div class="icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Corporate Training</h3>
+            <p>At Drushti Training and Consultancy services, we've developed a comprehensive sales training program that
+              directly addresses the issues faced by corporates and business professionals. <br>
+              Our training is designed in such a way, that your sales team with the skills and knowledge will definitely
+              overcome these challenges and achieve exceptional results. </p>
+            <h4 class="text-warning">Topics Covered:</h4>
+            <ul class="training-list">
+              <li>Grooming & Personality Development</li>
+              <li>Goal Setting & Target Achievement</li>
+              <li>Effective Communication & Presentation Skills</li>
+              <li>Lead Generation & Closing Deals</li>
+              <li>Win-Win Negotiation Skills</li>
+              <li>Customer Relationship Management</li>
+              <li>Time Management & Productivity</li>
+              <li>Sales Performance Consistency</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- First-Time Managers -->
+        <div class="col-md-6">
+          <div class="training-card">
+            <div class="icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>First-Time Managers</h3>
+            <p>First time managers are the future leaders of any organization.
+              <br>
+              We know that first time managers need support in all areas like communication with the team, conflict
+              resolution, managing people, decision making and many more. That’s where Drushti Training and Consultancy
+              Services help you with.
+            </p>
+            <h4 class="text-warning">Topics Covered:</h4>
+            <ul class="training-list">
+              <li>Effective Communication & Leadership</li>
+              <li>Performance & Change Management</li>
+              <li>Time Management & Delegation</li>
+              <li>Employee Motivation & Team Building</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Training Section -->
+  <section id="student-training" class="training-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">What We Offer in Training?</h2>
+        <p class="section-subtitle">For Students</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="training-card">
+            <div class="icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Campus to Corporate Training</h3>
+            <p>The Campus To corporate program is for graduates and post-graduates, seeking positions in the corporate
+              world. This will help them better understanding of Corporate life. This training will help them in
+              learning corporate communication, presentation skills and a positive attitude. </p>
+            <h4 class="text-warning">Topics Covered:</h4>
+            <ul class="training-list">
+              <li>Corporate Life vs College Life (Transition & Mindset Shift)</li>
+              <li>Effective Communication in a Corporate Environment</li>
+              <li>Resume Building (Professional CV Writing)</li>
+              <li>Presentation Skills & Public Speaking Confidence</li>
+              <li>Interview Preparation (Online & Offline Techniques)</li>
+              <li>Business Etiquettes (Email, Meetings, and Professionalism)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section class="container py-5 mt-2 mt-sm-3 mt-md-4 fading" id="Teamwork">
     <h2 class="title mb-3 text-center text-primary">
