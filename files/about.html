@@ -69,8 +69,7 @@
 
     .section-title {
       font-size: 2.5rem;
-      font-weight: 700;
-      color: #333;
+     
       position: relative;
       display: inline-block;
     }
@@ -87,9 +86,9 @@
 
     /* Profile Card */
     .profile-card {
-      background: white;
+      /* background: white; */
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
       transition: 0.3s ease-in-out;
       padding: 40px;
       text-align: left;
@@ -99,13 +98,16 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       transform: translateY(-5px);
     }
+    .profile-img:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
 
     .profile-img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
       object-fit: cover;
       border: 5px solid #110b81;
+      transition: 0.3s ease-in-out;
+
     }
 
     .profile-name {
@@ -135,19 +137,7 @@
       overflow: hidden;
     }
 
-    .marquee {
-      width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-    }
-
-    .marquee-content {
-      display: flex;
-      gap: 40px;
-      /* Space between images */
-      animation: marquee-animation 10s linear infinite;
-    }
+  
 
     .client-logo {
       max-height: 100px;
@@ -178,6 +168,7 @@
         text-align: center;
       }
     }
+ 
   </style>
 </head>
 
@@ -226,12 +217,12 @@
 
       <div class="row align-items-center mt-5">
         <!-- Profile Image -->
-        <div class="col-lg-4 order-md-1 order-lg-2 text-center">
+        <div class="col-md-4 order-md-1 order-lg-2 text-center">
           <img src="../img/Director_image.webp" alt="Nivedita Kanitkar-Gupte" class="profile-img">
         </div>
 
         <!-- Profile Information -->
-        <div class="col-lg-8 order-md-2 order-lg-1">
+        <div class="col-md-8 order-md-2 order-lg-1">
           <div class="profile-card">
             <h3 class="profile-name">Nivedita Kanitkar-Gupte</h3>
             <p class="profile-title">Managing Director</p>

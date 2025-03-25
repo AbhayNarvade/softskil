@@ -118,101 +118,24 @@
     /* what we offer */
 
 
-    /* Section Layout */
-    .training-section {
+    /* Client section */
+
+        /* Clients Section */
+        .clients-section {
       padding: 80px 0;
-    }
-
-    .training-section:nth-child(even) {
-      background: #ffffff;
-    }
-
-
-    .section-title::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: #FF6B00;
-      margin: 10px auto 0;
-      border-radius: 2px;
-    }
-
-    .section-subtitle {
-      font-size: 1.2rem;
-      color: #666;
-      margin-bottom: 40px;
-    }
-
-    /* Cards */
-    .training-card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
       text-align: center;
-      height: 842px;
+      background: white;
+      overflow: hidden;
     }
 
-    .training-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Icons */
-    .training-card .icon {
-      font-size: 50px;
-      margin-bottom: 20px;
-      color: #233063cc;
-    }
-
-    /* Training List */
-    .training-list {
-      text-align: left;
-      padding-left: 0;
-      list-style: none;
-    }
-
-    .training-list li {
-      font-size: 18px;
-      color: #333;
-      padding: 8px 0;
-      position: relative;
-    }
-
-    .training-list li::before {
-      content: "✔";
-      color: #FF6B00;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-
-    /* Responsive */
   
-    @media (max-width: 992px) {
-      .training-card {
-        height: 1050px;
-      }
+
+    .client-logo {
+      max-height: 100px;
+      width: auto;
+      object-fit: contain;
     }
-    @media (max-width: 768px) {
-      .training-card {
-        margin-bottom: 30px;
-        height: 800px;
-      }
-    }
-    @media (max-width: 500px) {
-      .training-card {
-        margin-bottom: 30px;
-        height: 1000px;
-      }
-    }
-    @media (max-width: 400px) {
-      .training-card {
-        margin-bottom: 30px;
-        height: 1200px;
-      }
-    }
+
   </style>
 </head>
 
@@ -387,99 +310,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Corporate Training Section -->
-  <section id="corporate-training" class="training-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title">What We Offer in Training?</h2>
-        <p class="section-subtitle">For Corporate Professionals</p>
-      </div>
-
-      <div class="row align-items-center">
-        <!-- Corporate Training -->
-        <div class="col-md-6">
-          <div class="training-card">
-            <div class="icon">
-              <i class="fas fa-building"></i>
-            </div>
-            <h3>Corporate Training</h3>
-            <p>At Drushti Training and Consultancy services, we've developed a comprehensive sales training program that
-              directly addresses the issues faced by corporates and business professionals. <br>
-              Our training is designed in such a way, that your sales team with the skills and knowledge will definitely
-              overcome these challenges and achieve exceptional results. </p>
-            <h4 class="text-warning">Topics Covered:</h4>
-            <ul class="training-list">
-              <li>Grooming & Personality Development</li>
-              <li>Goal Setting & Target Achievement</li>
-              <li>Effective Communication & Presentation Skills</li>
-              <li>Lead Generation & Closing Deals</li>
-              <li>Win-Win Negotiation Skills</li>
-              <li>Customer Relationship Management</li>
-              <li>Time Management & Productivity</li>
-              <li>Sales Performance Consistency</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- First-Time Managers -->
-        <div class="col-md-6">
-          <div class="training-card">
-            <div class="icon">
-              <i class="fas fa-user-tie"></i>
-            </div>
-            <h3>First-Time Managers</h3>
-            <p>First time managers are the future leaders of any organization.
-              <br>
-              We know that first time managers need support in all areas like communication with the team, conflict
-              resolution, managing people, decision making and many more. That’s where Drushti Training and Consultancy
-              Services help you with.
-            </p>
-            <h4 class="text-warning">Topics Covered:</h4>
-            <ul class="training-list">
-              <li>Effective Communication & Leadership</li>
-              <li>Performance & Change Management</li>
-              <li>Time Management & Delegation</li>
-              <li>Employee Motivation & Team Building</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Student Training Section -->
-  <section id="student-training" class="training-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title">What We Offer in Training?</h2>
-        <p class="section-subtitle">For Students</p>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="training-card">
-            <div class="icon">
-              <i class="fas fa-user-graduate"></i>
-            </div>
-            <h3>Campus to Corporate Training</h3>
-            <p>The Campus To corporate program is for graduates and post-graduates, seeking positions in the corporate
-              world. This will help them better understanding of Corporate life. This training will help them in
-              learning corporate communication, presentation skills and a positive attitude. </p>
-            <h4 class="text-warning">Topics Covered:</h4>
-            <ul class="training-list">
-              <li>Corporate Life vs College Life (Transition & Mindset Shift)</li>
-              <li>Effective Communication in a Corporate Environment</li>
-              <li>Resume Building (Professional CV Writing)</li>
-              <li>Presentation Skills & Public Speaking Confidence</li>
-              <li>Interview Preparation (Online & Offline Techniques)</li>
-              <li>Business Etiquettes (Email, Meetings, and Professionalism)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <section class="container py-5 mt-2 mt-sm-3 mt-md-4 fading" id="Teamwork">
@@ -791,6 +621,24 @@
       </div>
     </div>
   </div>
+
+    <!-- Our Clients Section -->
+    <section class="clients-section mt-2">
+      <div class="container">
+        <h2 class="section-title">Our Clients</h2>
+        <p class="text-muted">We are proud to have worked with these amazing clients.</p>
+  
+        <div class="marquee">
+          <div class="marquee-content">
+            <img src="./img/1.webp" alt="Client 1" class="client-logo img-fluid">
+            <img src="./img/2.webp" alt="Client 2" class="client-logo img-fluid">
+            <img src="./img/3.webp" alt="Client 3" class="client-logo img-fluid">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+  
 
   <div class="container fading my-4">
     <div class="text-center mb-2-8 mb-lg-6">
