@@ -196,8 +196,6 @@ li {
   color: #e9ecef;
 }
 
-
-
 .card {
   transition: transform 0.3s ease;
 }
@@ -387,4 +385,16 @@ img {
 #skills {
   margin-top: 50px; /* Adjust the value to control the space at the top */
   padding: 50px;
+}
+
+/* about us banner
+ */
+
+#aboutusbanner {
+  margin-top: 100px;
+}
+@media (max-width: 401px) {
+  #aboutusbanner {
+    margin-top: 150px;
+  }
 }
