@@ -271,7 +271,6 @@ li {
   .banner {
     position: relative;
     height: 100vh; /* Adjust height as needed */
-    background-image: url("/img/second.webp"); /* Add your image URL */
     background-size: cover;
     background-position: -250px;
     padding: 20px; /* Adds padding to prevent overflow on smaller screens */
@@ -390,11 +389,11 @@ img {
 /* about us banner
  */
 
-#aboutusbanner {
+#aboutusbannersection {
   margin-top: 100px;
 }
 @media (max-width: 401px) {
-  #aboutusbanner {
+  #aboutusbannersection {
     margin-top: 150px;
   }
 }
